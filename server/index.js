@@ -6,8 +6,8 @@ import postRoutes from "./routes/post.js";
 
 const app = express();
 
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+app.use(bodyParser.json({ limit: "60mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "60mb", extended: true }));
 app.use(cors());
 
 app.use("/posts", postRoutes);
@@ -25,6 +25,6 @@ mongoose
   .then(() =>
     app.listen(PORT, () => console.log(`Server Running port: ${PORT}`))
   )
-  .catch((err) => console.log(err.message));
+  .catch((err) => console.log(`${err} did not connect`));
 
 mongoose.set("useFindAndModify", false);

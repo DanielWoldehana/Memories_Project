@@ -4,9 +4,13 @@ export default makeStyles({
   media: {
     height: 0,
     paddingTop: "56.25%",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    backgroundBlendMode: "darken",
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    backgroundBlendMode: "luminosity",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
+
   border: {
     border: "solid",
   },
@@ -32,6 +36,8 @@ export default makeStyles({
     top: "20px",
     right: "20px",
     color: "white",
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    borderRadius: "20px",
   },
   grid: {
     display: "flex",
