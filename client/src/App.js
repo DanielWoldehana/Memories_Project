@@ -21,7 +21,7 @@ const App = () => {
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">
-          Memories
+          Memory Lane
         </Typography>
         <img
           className={classes.image}
@@ -33,6 +33,7 @@ const App = () => {
       <Grow in>
         <Container>
           <Grid
+            className={classes.mainContainer}
             container
             justify="space-between"
             alignItems="stretch"
